@@ -2,9 +2,9 @@ from flask import Flask, jsonify
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app)  # Permite que o front-end acesse a API sem problemas de segurança locais
+CORS(app)  #permite que o front acesse a API sem problemas de segurança locais
 
-# Banco de dados fictício (Mock Data)
+#banco de dados fictício (Mock Data)
 DESTINOS = [
     {
         "id": 1,
@@ -37,5 +37,6 @@ def get_destinos():
     return jsonify(DESTINOS)
 
 if __name__ == '__main__':
-    # Rodando em 0.0.0.0 para que o celular consiga acessar o computador na mesma rede Wi-Fi
+    #rodando em 0.0.0.0 para que o celular consiga acessar o computador na 
+    #mesma rede Wi-Fi
     app.run(host='0.0.0.0', port=5000, debug=True)

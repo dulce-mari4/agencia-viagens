@@ -1,4 +1,4 @@
-// Estado da Aplicação (State)
+// Estado da aplicação (State)
 let appState = {
     destinos: [],
     destinoSelecionado: null,
@@ -7,7 +7,7 @@ let appState = {
     assentoSelecionado: null
 };
 
-// Configuração da API do Servidor Python
+// Configuração da API do servidor python
 const API_URL = `http://${window.location.hostname}:5000/api/destinos`;
 
 // Elementos da DOM (View Elements)
@@ -58,7 +58,7 @@ function abrirReserva(destino) {
     appState.destinoSelecionado = destino;
     document.getElementById('nome-destino-selecionado').innerText = destino.local;
     
-    // Renderiza Horários
+    // Renderiza horários
     const containerHorarios = document.getElementById('container-horarios');
     containerHorarios.innerHTML = '';
     destino.horarios.forEach(horario => {
@@ -69,7 +69,7 @@ function abrirReserva(destino) {
         containerHorarios.appendChild(btn);
     });
 
-    // Atualiza Preços nos Botões de Classe
+    // Atualiza preços nos botões de classe
     document.getElementById('preco-eco').innerText = `Econômica: R$ ${destino.preco_economica}`;
     document.getElementById('preco-exe').innerText = `Executiva: R$ ${destino.preco_executiva}`;
 
@@ -88,7 +88,7 @@ function selecionarEstrategia(evento, chaveEstado, valor) {
     // Adiciona ao elemento clicado
     evento.target.classList.add('selecionado');
     
-    // Salva no Estado
+    // Salva no estado
     appState[chaveEstado] = valor;
     verificarValidacaoFormulario();
 }
@@ -113,7 +113,7 @@ function configurarEventos() {
         });
     });
 
-    // Finalizar Compra
+    // Finalizar compra
     btnFinalizar.addEventListener('click', () => {
         alert(`🎉 Compra bem-sucedida!\n\nVoo para: ${appState.destinoSelecionado.local}\nHorário: ${appState.horarioSelecionado}\nAssento: ${appState.assentoSelecionado}\n\nObrigado por voar com a FlyDream!`);
         

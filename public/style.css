@@ -1,4 +1,4 @@
-/* Paleta de Cores: Azul (#0B3C5D), Branco (#FFFFFF), Amarelo Dourado (#F5A623) */
+/* Paleta de cores: Azul (#0B3C5D), Branco (#FFFFFF), Amarelo Dourado (#F5A623) */
 :root {
     --azul-principal: #0B3C5D;
     --azul-escuro: #06273F;
@@ -47,7 +47,7 @@ h2, h3 {
     color: var(--azul-principal);
 }
 
-/* Controle de Telas */
+/* controle de telas */
 .tela {
     display: none;
     min-height: 100vh;
@@ -57,7 +57,7 @@ h2, h3 {
     display: block;
 }
 
-/* Cards de Destinos */
+/* cards de destinos */
 #container-destinos {
     padding: 15px;
 }
@@ -88,7 +88,7 @@ h2, h3 {
     padding: 12px;
 }
 
-/* Customização da Tela de Reserva */
+/* customização da tela de reserva */
 #btn-voltar {
     position: absolute;
     left: 15px;
@@ -131,7 +131,7 @@ h2, h3 {
     border-color: var(--dourado);
 }
 
-/* Grid de Assentos */
+/* grid de assentos */
 .mapa-assentos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
