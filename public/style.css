@@ -1,0 +1,161 @@
+/* Paleta de Cores: Azul (#0B3C5D), Branco (#FFFFFF), Amarelo Dourado (#F5A623) */
+:root {
+    --azul-principal: #0B3C5D;
+    --azul-escuro: #06273F;
+    --branco: #FFFFFF;
+    --dourado: #F5A623;
+    --cinza-claro: #F5F7FA;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    background-color: var(--cinza-claro);
+    color: #333;
+}
+
+header {
+    background-color: var(--azul-principal);
+    color: var(--branco);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    border-bottom: 4px solid var(--dourado);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.logo-aviao {
+    font-size: 2.5rem;
+    color: var(--dourado);
+    margin-bottom: 5px;
+    animation: flutuar 3s ease-in-out infinite;
+}
+
+@keyframes flutuar {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+h2, h3 {
+    padding: 15px;
+    color: var(--azul-principal);
+}
+
+/* Controle de Telas */
+.tela {
+    display: none;
+    min-height: 100vh;
+}
+
+.tela.ativa {
+    display: block;
+}
+
+/* Cards de Destinos */
+#container-destinos {
+    padding: 15px;
+}
+
+.card-destino {
+    background-color: var(--branco);
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    cursor: pointer;
+    transition: transform 0.2s;
+    border-left: 5px solid var(--azul-principal);
+}
+
+.card-destino:active {
+    transform: scale(0.98);
+}
+
+.card-destino img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.card-destino h3 {
+    color: var(--azul-escuro);
+    padding: 12px;
+}
+
+/* Customização da Tela de Reserva */
+#btn-voltar {
+    position: absolute;
+    left: 15px;
+    top: 25px;
+    background: none;
+    border: none;
+    color: var(--branco);
+    font-size: 1.5rem;
+}
+
+.secao-reserva {
+    background: var(--branco);
+    margin: 10px 15px;
+    border-radius: 8px;
+    padding-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.opcoes-alinhadas {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 15px;
+    gap: 10px;
+}
+
+.btn-opcao, .assento {
+    background-color: var(--cinza-claro);
+    border: 2px solid #DDD;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    flex: 1;
+    text-align: center;
+}
+
+.btn-opcao.selecionado, .assento.selecionado {
+    background-color: var(--azul-principal);
+    color: var(--branco);
+    border-color: var(--dourado);
+}
+
+/* Grid de Assentos */
+.mapa-assentos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 0 15px;
+}
+
+.btn-principal {
+    display: block;
+    width: calc(100% - 30px);
+    margin: 30px auto;
+    background-color: var(--dourado);
+    color: var(--azul-escuro);
+    border: none;
+    padding: 15px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.btn-principal:disabled {
+    background-color: #CCC;
+    color: #666;
+    cursor: not-allowed;
+}

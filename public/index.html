@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlyDream - Agência de Viagens</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <!-- Ícone de avião usando FontAwesome para simular a identidade visual -->
+    <link rel="stylesheet" href="[https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css](https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css)">
+</head>
+<body>
+
+    <!-- Tela Inicial (Lista de Destinos) -->
+    <div id="tela-destinos" class="tela ativa">
+        <header>
+            <i class="fa-solid fa-plane logo-aviao"></i>
+            <h1>FlyDream</h1>
+        </header>
+        <main>
+            <h2>Escolha seu próximo destino</h2>
+            <div id="container-destinos">
+                <!-- Inserido dinamicamente pelo JS -->
+            </div>
+        </main>
+    </div>
+
+    <!-- Tela de Compra / Reserva -->
+    <div id="tela-reserva" class="tela">
+        <header>
+            <button id="btn-voltar"><i class="fa-solid fa-arrow-left"></i></button>
+            <h1 id="nome-destino-selecionado">Detalhes do Voo</h1>
+        </header>
+        <main>
+            <!-- Seleção de Horário -->
+            <section class="secao-reserva">
+                <h3><i class="fa-regular fa-clock"></i> Escolha o Horário</h3>
+                <div id="container-horarios" class="opcoes-alinhadas"></div>
+            </section>
+
+            <!-- Seleção de Classe/Valor -->
+            <section class="secao-reserva">
+                <h3><i class="fa-solid fa-ticket"></i> Classe do Voo</h3>
+                <div class="opcoes-alinhadas">
+                    <button class="btn-opcao classe-voo" data-classe="economica" id="preco-eco">Econômica</button>
+                    <button class="btn-opcao classe-voo" data-classe="executiva" id="preco-exe">Executiva</button>
+                </div>
+            </section>
+
+            <!-- Seleção de Assento (Poltrona) -->
+            <section class="secao-reserva">
+                <h3><i class="fa-solid fa-chair"></i> Selecione a Poltrona</h3>
+                <div class="mapa-assentos">
+                    <button class="assento" data-assento="A1">A1</button>
+                    <button class="assento" data-assento="A2">A2</button>
+                    <button class="assento" data-assento="B1">B1</button>
+                    <button class="assento" data-assento="B2">B2</button>
+                    <button class="assento" data-assento="C1">C1</button>
+                    <button class="assento" data-assento="C2">C2</button>
+                </div>
+            </section>
+
+            <button id="btn-finalizar" class="btn-principal" disabled>Finalizar Compra</button>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
