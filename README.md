@@ -56,7 +56,7 @@ pip install flask flask-cors
 ```bash
 python app.py
 ```
-> **Nota:** O servidor será iniciado na porta `5000`. O terminal exibirá o seu endereço IP na rede local (ex: `http://192.168.1.5:5000`).
+> **Nota:** O servidor será iniciado na porta `5000`. O terminal exibirá o seu endereço IP na rede local (ex: `http://192.566.0.4:5000`).
 
 ### Passo 2: Inicializar o Servidor Front-end
 1. Em um novo terminal, navegue até o diretório de arquivos públicos:
@@ -70,7 +70,7 @@ python -m http.server 8080
 
 ### Passo 3: Acesso via Dispositivo Móvel
 1. Certifique-se de que o dispositivo móvel e o computador host estejam conectados à **mesma rede Wi-Fi**.
-2. No navegador do smartphone, acesse o IP da máquina host na porta do front-end. Exemplo: `http://192.168.1.5:8080` *(substitua pelo IP obtido no Passo 1)*.
+2. No navegador do smartphone, acesse o IP da máquina host na porta do front-end. Exemplo: `http://192.566.0.4:8080` *(substitua pelo IP obtido no Passo 1)*.
 
 ### Instalação do PWA:
 * **Android (Chrome):** Acesse o menu de opções (três pontos verticais) e selecione **"Instalar aplicativo"** ou **"Adicionar à tela inicial"**.
