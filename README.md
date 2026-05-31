@@ -6,7 +6,7 @@ O **FlyDream** é um protótipo de aplicativo focado na jornada do usuário para
 
 ## Sobre o Projeto
 
-O aplicativo adota a abordagem **Mobile-First**. Utilizando recursos de PWA, o sistema pode ser instalado diretamente no dispositivo móvel a partir do navegador. O aplicativo opera em modo *standalone* (tela cheia) e exibe um ícone personalizado na tela inicial do aparelho, oferecendo uma experiência de usabilidade análoga à de um aplicativo nativo.
+O aplicativo adota a abordagem **Mobile-First**. Utilizando recursos de PWA, o sistema pode ser instalado diretamente no dispositivo móvel a partir do navegador. O aplicativo opera em modo de acesso responsivo via rede local e exibe um ícone personalizado na tela inicial do aparelho, oferecendo uma experiência de usabilidade próxima à de um aplicativo nativo.
 
 ### Principais Funcionalidades
 * Visualização dinâmica de destinos turísticos renderizados em formato de *cards*.
