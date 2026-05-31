@@ -1,6 +1,6 @@
 # FlyDream: Agência de Viagens (Mobile PWA)
 
-<img width="374" height="784" alt="flydream git" src="https://github.com/user-attachments/assets/81728729-e28a-46f0-8298-423e8a8f957b" />
+<img width="1220" height="2428" alt="tela_inicial" src="https://github.com/user-attachments/assets/781c48dd-daef-4e8a-aaa4-3b14d9b38fd8" />
 
 
 O **FlyDream** é um protótipo de aplicativo focado na jornada do usuário para a seleção e reserva fictícia de passagens aéreas. O projeto foi desenvolvido como parte de uma atividade acadêmica, com o objetivo de demonstrar a viabilidade de Progressive Web Apps (PWAs) integradas a microsserviços.
